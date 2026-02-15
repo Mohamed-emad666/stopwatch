@@ -85,7 +85,13 @@ else
     _secs =59 ;
     }
   }
+
 }
+  
+if (_hours==0 && _mins ==0 && _secs==0 ) {
+
+system("paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga");
+}  
 }
 noecho();
 nodelay(stdscr,TRUE);
